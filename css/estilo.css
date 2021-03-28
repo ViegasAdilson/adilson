@@ -32,6 +32,7 @@
     right: 0;
     width: 75%;
     position: absolute;
+    text-align: justify;
     padding-left: 40px;
     padding-top: 100px;
     padding-right: 200px;
@@ -284,8 +285,11 @@ ul-social li{
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (max-width: 1199.98px) { 
+@media (max-width: 1500px) { 
     
-
+    .section-container{
+        padding: 10px 20px;
+        text-align: justify;
+    }
 }
  
