@@ -26,6 +26,7 @@
      text-align: center;
      min-height: 100vh;
      background: var(--aside-color);
+     padding: 0 10px;
      
      
 }
@@ -38,6 +39,9 @@
     color: var(--aside-color);
     background: #dad5c3;
     
+}
+#about-container-section{
+    padding-top: 150px;
 }
 
 #section-title{
@@ -75,6 +79,12 @@
     color: var(--text-color);
     text-decoration: none;
     
+}
+#ual-link{
+    font-size: 15px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration:none;
 }
 
 
@@ -143,6 +153,40 @@ ul-social li{
 
 }
 
+/* Skill css*/
+#skills-section-title{
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.skills-box{
+   flex: 1 1 33%;
+   max-width: 33%;
+   margin-bottom: 35px; 
+}
+
+.skills-title{
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 7px solid var(--main-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.skills-box i{
+    font-size: 45px;
+    margin-right: 10px;
+}
+
 /*Mobile*/
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -169,14 +213,12 @@ ul-social li{
     }
 
     /*My cv*/
-    #cv-cabecalho{
-        text-align: right;
-    }
+    
     #section-container{
         min-height: auto;
-        padding-left: 5px;
+        padding-left: 15px;
         padding-top: 100px;
-        padding-right: 5px;
+        padding-right: 15px;
         color: var(--aside-color);
         background: #dad5c3;
     }
@@ -201,12 +243,59 @@ ul-social li{
 
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 991.98px) {
+    #section-container{
+        min-height: auto;
+        padding-left: 10px;
+        padding-top: 100px;
+        padding-right: 10px;
+        color: var(--aside-color);
+        background: #dad5c3;
+    }
+    .perfil{
+        margin-top: 10px;
+        text-align: justify;
+    }
+    .perfil-title{
+        display: flex;
+        justify-content: left;
+        
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .perfil-title i{
+        font-size: 25px;
+        padding-right: 5px;
+    
+    }
 
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (max-width: 1199.98px) { 
-
+    #section-container{
+        min-height: auto;
+        padding-left: 10px;
+        padding-top: 100px;
+        padding-right: 10px;
+        color: var(--aside-color);
+        background: #dad5c3;
+    }
+    .perfil{
+        margin-top: 10px;
+        text-align: justify;
+    }
+    .perfil-title{
+        display: flex;
+        justify-content: left;
+        
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .perfil-title i{
+        font-size: 25px;
+        padding-right: 5px;
+    
+    }
 
 }
  
