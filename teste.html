@@ -5,49 +5,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humburger Menu</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 
 <body>
-    <main>
-        <aside>
+    <main id="container">
+        <aside id="aside-container">
             <img src="img/adilson.jpg" alt="Adilson Viegas">
             <div>
                 <p>
                     Adilson Viegas
                 </p>
                 <p>
-                    Ola, meu nome e Adilson Viegas e sou <samp class="highlight"> Desenvolvedor FullStack</samp>
+                    Hello, my name is Adilson Viegas, and I am <samp class="highlight">FullStack Developer</samp>
                 </p>
                 <p class="aside-welcome">Welcome</p>
             </div>
-            <nav>
-
-                <div class="openMenu"><i class="fa fa-bars"></i></div>
-                <ul class="mainMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                    <div class="closeMenu"><i class="fa fa-times"></i></div>
-                    <span class="icons">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
+            <nav class="navbar-expand-md">
+                <button class="navbar-toggler"data-toggle="collapse" data-target="#navtarget">
+                    <i class="fas fa-bars" style="color: #dad5c3; float: left;"></i>
+                </button>
+                <div class="div-menu collapse navbar-collapse" id="navtarget">
+                    <ul class="ul-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="mycv.html" target="blank">My CV</a>
+                        </li>
+                        <li>
+                            <a href="skills.html">Skills</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <span class="div-social">
+                    <p class="d-none d-md-block">GET IN TOUCH</p>
+                    <a href="mailto:adilsonviegas@hotmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adilson-viegas-0629221a2/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ViegasAdilson" target="_blank">
                         <i class="fab fa-github"></i>
-                    </span>
-                </ul>
+                    </a>
+                </span>
             </nav>
         </aside>
-        <section>
-            section
+        <section id="section-container">
+            <div id="body-cv">
+                <div>
+                    <div id="cv-cabecalho">
+                        <h3>Adilson Pires Lima Viegas</h3>
+                        <h4>Web\Software Developer</h4>
+                        <p style="margin-bottom: 0px;">
+                            <strong>Address:</strong> 26 Windermere Court, Leigh, Manchester, WN71WN
+                        </p>
+                        <p style="margin-bottom: 0px;">
+                            <strong>Telephone:</strong> 07831185225
+                        </p>
+                        <p>
+                            <strong>Email:</strong> adilsonviegas@hotmail.com
+                        </p>
+                    </div>
+                    <div class="perfil">
+                        <div class="perfil-title">
+                            <i class="fas fa-user"></i>
+                            <h4>Personal Profile</h4>
+                        </div>
+                        <p>
+                            A Software Engineering graduate with fundamental knowledge of software design, development, and
+                            testing.
+                            Seeking to utilize broad educational background with excellent analytical, technical, and
+                            programming skills to
+                            thrive as an entry-level software engineer. I am positive, hardworking, enthusiastic, committed,
+                            professional selfmotivate, fast learner with ability to quickly adjust the new responsibility
+                            in
+                            diverse environment and strong time
+                            management and multi-tasking skills. Strong work ethic in team or individual settings product
+                            success and process
+                            efficiency.
+                        </p>
+                    </div>
+                    <div class="perfil">
+                        <div class="perfil-title">
+                            <i class="fas fa-book"></i>
+                            <h4>IT / TECNICAL SKILLS</h4>
+                        </div>
+                        <ul>
+                            <li><strong>Languages:</strong> java, C#, Python,MySQL, JavaScripts</li>
+                            <li><strong>Platforms and Frameworks:</strong> Windows, Linux, Django, Bootstraps, Git and
+                                GitHub
+                            </li>
+                            <li><strong>Networks:</strong> Network Configuration, WAN, LAN</li>
+                            <li><strong>Other:</strong>VS Code, Eclipse, Android Studio, Visual Studio, Microsoft Office
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="perfil">
+                        <div class="perfil-title">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>Employment History</h4>
+                        </div>
+                        <h5 style="margin-bottom: 0px;">Stateside Food</h5>
+                        <p style="margin-bottom: 0px;">
+                            <strong>Production Operative - Toppings</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                Responsible for first Line Maintenance of equipment in the designated area,
+                            </li>
+                            <li>
+                                Responsibility for all CCP’s in designated areas,
+                            </li>
+                            <li>
+                                Replenish line with raw materials,
+                            </li>
+                            <li>
+                                To report/highlight any machinery or product related issues,
+                            </li>
+                            <li>
+                                Adding toppings to pizza bases,
+                            </li>
+                            <li>
+                                Packing the product into skillets,
+                            </li>
+                            <li>
+                                Carry out basic machinery repairs/replacements on wear and tear.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="perfil">
+                        <h5 style="margin-bottom: 0px;">Oscar Mayer Food, Chard</h5>
+                        <p style="margin-bottom: 0px;">
+                            <strong>Hygiene Cleaning Operative</strong>
+                        </p>
+                        <ul ty>
+                            <li>
+                                Strip & Clean Various pieces of equipment and areas though out the factory according to the
+                                current
+                                P.W.I.
+                            </li>
+                            <li>
+                                Liaise with team and team leader to ensure good all round communication and efficiency.
+                            </li>
+                            <li>
+                                Report any equipment damage, malfunctions etc to Engineering and Hygiene team leader /
+                                Supervisor,
+                            </li>
+                            <li>
+                                To assist other operatives,
+                            </li>
+                            <li>
+                                Ensure all health & safety checks are done & adhered to,
+                            </li>
+                            <li>
+                                Remove bins full of rubbish, dolavs, pallets, fat tanks, trays etc,
+                            </li>
+                            <li>
+                                Always keep all allocated areas clean and tidy
+                            </li>
+                            <li>
+                                Ensure cleaning records/ checks sheets are completed and recorded on the relevant paperwork.
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="perfil">
+                        <h5 style="margin-bottom: 0px;">TMN Warehouse, Portugal</h5>
+                        <p style="margin-bottom: 0px;">
+                            <strong>Warehouse Assistant</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                Strip & Clean Various pieces of equipment and areas though out the factory according to the
+                                current
+                                P.W.I.
+                            </li>
+                            <li>
+                                Liaise with team and team leader to ensure good all round communication and efficiency.
+                            </li>
+                            <li>
+                                Report any equipment damage, malfunctions etc to Engineering and Hygiene team leader /
+                                Supervisor,
+                            </li>
+                            <li>
+                                To assist other operatives,
+                            </li>
+                            <li>
+                                Ensure all health & safety checks are done & adhered to,
+                            </li>
+                            <li>
+                                Remove bins full of rubbish, dolavs, pallets, fat tanks, trays etc,
+                            </li>
+                            <li>
+                                Always keep all allocated areas clean and tidy
+                            </li>
+                            <li>
+                                Ensure cleaning records/ checks sheets are completed and recorded on the relevant paperwork.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
-    <script src="css/app.js"></script>
-
 </body>
 
 </html>

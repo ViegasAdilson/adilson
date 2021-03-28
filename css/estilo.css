@@ -1,10 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    outline: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
 }
 :root{
     --main-color: #54b689;
@@ -15,29 +12,32 @@
     --about-bg-color: #111821;
 }
 
-#container{
-    display: flex;
-    color: var(--text-color);
-}
 
 #aside-container{
-    flex: 1 1 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    position: absolute;
+    color: var(--text-color);
     border-right: 2px solid var(--bio-border-color);
-     text-align: center;
-     min-height: 100vh;
-     background: var(--aside-color);
-     padding: 0 10px;
-     
-     
+    text-align: center;
+    background: var(--aside-color);
+    padding: 0 10px;
 }
-#section-container{
-    flex: 1 1 75%;
-    min-height: 100vh;
+
+.section-container{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    position: absolute;
     padding-left: 40px;
     padding-top: 100px;
     padding-right: 200px;
     color: var(--aside-color);
     background: #dad5c3;
+    overflow-y: scroll;
     
 }
 #about-container-section{
@@ -73,6 +73,7 @@
     margin: 8px 0;
     font-size: 15px;
     text-transform: uppercase;
+    list-style: none;
 }
 
 .div-menu .ul-menu a{
@@ -112,7 +113,6 @@
     margin-top: 60px;
 }
 
-
 .div-social a i{
     margin: 10px 10px;
     list-style: none;
@@ -136,6 +136,7 @@ ul-social li{
 #cv-cabecalho{
     text-align: right;
 }
+
 .perfil{
     margin-top: 20px;
     text-align: justify;
@@ -198,21 +199,32 @@ ul-social li{
 
 /*Medium devices (tablets, 768px and up)*/
 @media (max-width: 767.98px) { 
-    #container{
-        flex-direction: column;
-    }
-    #aside-container{
-        min-height: auto;
     
+    #aside-container{
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        position: relative;
+        width: auto;
+    
+    }
+    .section-container{
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        position: relative;
+        width: auto;
+        padding: 10px 20px;
+        text-align: justify;
+        overflow: hidden;
     }
     
     #aside-container img{
         margin: 30px auto;
     }
-    #section-container{
-        padding: 10px 20px;
-        text-align: justify;
-    }
+    
 
     .div-social a i{
         font-size: 22px;
@@ -227,7 +239,7 @@ ul-social li{
     
     }
 
-    
+
     /*Skil css*/
     .skills-box{
         flex: 1 1 100%;
