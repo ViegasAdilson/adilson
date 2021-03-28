@@ -159,6 +159,7 @@ ul-social li{
     padding-top: 20px;
     margin-bottom: 20px;
     font-size: 32px;
+    
 }
 
 #skills-container{
@@ -202,54 +203,58 @@ ul-social li{
     }
     #aside-container{
         min-height: auto;
+    
     }
     
     #aside-container img{
         margin: 30px auto;
     }
+    #section-container{
+        padding: 10px 20px;
+        text-align: justify;
+    }
+
     .div-social a i{
         font-size: 22px;
         
     }
 
     /*My cv*/
-    
-    #section-container{
-        min-height: auto;
-        padding-left: 15px;
-        padding-top: 100px;
-        padding-right: 15px;
-        color: var(--aside-color);
-        background: #dad5c3;
-    }
-    .perfil{
-        margin-top: 10px;
-        text-align: justify;
-    }
-    .perfil-title{
-        display: flex;
-        justify-content: left;
-        
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
+
     .perfil-title i{
         font-size: 25px;
         padding-right: 5px;
     
     }
+
+    
+    /*Skil css*/
+    .skills-box{
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .skills-box i{
+        font-size: 60px;
+    }
+    
+    
 
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 991.98px) {
-    #section-container{
-        min-height: auto;
-        padding-left: 10px;
-        padding-top: 100px;
-        padding-right: 10px;
-        color: var(--aside-color);
-        background: #dad5c3;
+   
+    #ual-link{
+        font-size: 15px;
+        color: var(--main-color);
+        text-transform: uppercase;
+        text-decoration:none;
+    }
+    #about-container-section{
+        padding-top: 5px;
     }
     .perfil{
         margin-top: 10px;
@@ -262,40 +267,13 @@ ul-social li{
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
-    .perfil-title i{
-        font-size: 25px;
-        padding-right: 5px;
     
-    }
 
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (max-width: 1199.98px) { 
-    #section-container{
-        min-height: auto;
-        padding-left: 10px;
-        padding-top: 100px;
-        padding-right: 10px;
-        color: var(--aside-color);
-        background: #dad5c3;
-    }
-    .perfil{
-        margin-top: 10px;
-        text-align: justify;
-    }
-    .perfil-title{
-        display: flex;
-        justify-content: left;
-        
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-    .perfil-title i{
-        font-size: 25px;
-        padding-right: 5px;
     
-    }
 
 }
  
