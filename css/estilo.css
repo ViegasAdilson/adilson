@@ -319,7 +319,9 @@ body.aboutbody ul.ul-menu a#about{
 
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 991.98px) {
-    
+    #aside-container img{
+    cursor: cell;
+    }
     #ual-link{
         font-size: 15px;
         color: var(--main-color);
