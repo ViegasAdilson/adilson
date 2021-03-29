@@ -24,6 +24,7 @@
     text-align: center;
     background: var(--aside-color);
     padding: 0 10px;
+    overflow: hidden;
 }
 
 .section-container{
@@ -38,8 +39,21 @@
     padding-right: 200px;
     color: var(--aside-color);
     background: #dad5c3;
-    overflow-y: scroll;
     
+}
+.section-container-cv{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    position: absolute;
+    text-align: justify;
+    padding-left: 40px;
+    padding-top: 100px;
+    padding-right: 200px;
+    color: var(--aside-color);
+    background: #dad5c3;
+    overflow-y: scroll;
 }
 #about-container-section{
     padding-top: 150px;
@@ -78,57 +92,64 @@
 }
 
 .div-menu .ul-menu a{
+    width: 100%;
     color: var(--text-color);
     text-decoration: none;
     
+}
+div.div-menu ul.ul-menu li.primeiro a{
+    background: none;
 }
 #ual-link{
     font-size: 15px;
     color: var(--main-color);
     text-transform: uppercase;
-    text-decoration:none;
+    
 }
 
+body.homebody ul.ul-menu a#idhome,
+body.mycvbody ul.ul-menu a#mycv,
+body.skillsbody ul.ul-menu a#skills,
+body.aboutbody ul.ul-menu a#about{
+    color: var(--main-color);
+    cursor: text;
+    border-bottom: 3px solid var(--main-color);
+}
 
 .ul-menu a::after{
     content: "";
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: var(--main-color);
     transition: width .3s;
 }
 .ul-menu a:hover{
     font-weight: 20px;
-    width: auto;
+    width: 100%;
     height: 15px;
-    
+    color: var(--main-color);
 }
 .ul-menu a:hover::after{
     width: 100%;
     background-position: right bottom;
-    
     transition: width .3s;
 }
 .div-social p{
-    margin-top: 60px;
+    margin-top: 50px;
 }
+
 
 .div-social a i{
     margin: 10px 10px;
-    list-style: none;
     justify-content: center;
     font-size: 30px;
     color: var(--text-color);
 }
-ul-social li{
-    flex: 1 1 0;
-}
-.ul-social a{
-    
-    margin: 0 15px;
-    
 
+.div-social a{
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 
@@ -149,10 +170,17 @@ ul-social li{
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+.perfil ul{
+    padding-left: 40px;
+    list-style-type:square;
+}
 .perfil-title i{
     font-size: 25px;
     padding-right: 5px;
 
+}
+#skills-cv li{
+    list-style: none;
 }
 
 /* Skill css*/
@@ -210,7 +238,8 @@ ul-social li{
         width: auto;
     
     }
-    .section-container{
+    .section-container,
+    .section-container-cv{
         top: auto;
         bottom: auto;
         left: auto;
@@ -228,9 +257,11 @@ ul-social li{
     
 
     .div-social a i{
-        font-size: 22px;
+        margin: 6px 5px;
+        font-size: 20px;
         
     }
+    
 
     /*My cv*/
 
@@ -264,7 +295,6 @@ ul-social li{
         font-size: 15px;
         color: var(--main-color);
         text-transform: uppercase;
-        text-decoration:none;
     }
     #about-container-section{
         padding-top: 5px;
@@ -280,16 +310,26 @@ ul-social li{
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
-    
-
+    .div-social a i{
+        margin: 5px 5px;
+        font-size: 22px;
+    }
+    .div-social p{
+        margin-top: 25px;
+    }
+    .div-social a{
+        margin: 0 8px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (max-width: 1500px) { 
     
-    .section-container{
-        padding: 10px 20px;
+    .section-container,
+    .section-container-cv{
+        padding: 20px 20px;
         text-align: justify;
     }
+    
 }
  
