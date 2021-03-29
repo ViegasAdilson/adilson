@@ -123,8 +123,8 @@ body.mycvbody ul.ul-menu a#mycv,
 body.skillsbody ul.ul-menu a#skills,
 body.aboutbody ul.ul-menu a#about{
     color: var(--main-color);
-    cursor: text;
-    border-bottom: 3px solid var(--main-color);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
 }
 
 .ul-menu a::after{
@@ -156,11 +156,16 @@ body.aboutbody ul.ul-menu a#about{
     justify-content: center;
     font-size: 30px;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .div-social a{
     margin: 0 10px;
     text-decoration: none;
+}
+.div-social a i:hover{
+    box-shadow: 5px 5px 10px black;
+    transition: .2s;
 }
 
 
