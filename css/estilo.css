@@ -275,10 +275,20 @@ body.aboutbody ul.ul-menu a#about{
         right: auto;
         position: relative;
         width: auto;
+        font-size: 12px;
         padding: 10px 20px;
         text-align: justify;
         overflow: hidden;
+        
     }
+   /* div.section-container h4,
+    div.section-container-cv h4{
+        font-size: 20px;
+    }*/
+    /*div.section-container div.pefil div.perfil-title i.fa, i.fas,
+    div.section-container-cv div.pefil div.perfil-title i.fa, i.fas{
+        font-weight: 400;
+    }*/
     
     #aside-container img{
         margin: 30px auto;
@@ -319,6 +329,13 @@ body.aboutbody ul.ul-menu a#about{
 
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 991.98px) {
+    *{
+        font-size: 13px;
+    }
+    div#aside-container nav button i.fa, i.fas{
+        font-size: 18px;
+
+    }
     #aside-container img{
     cursor: cell;
     }
