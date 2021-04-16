@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 :root{
     --main-color: #54b689;
@@ -21,11 +22,20 @@
     width: 30%;
     position: absolute;
     color: var(--text-color);
-    border-right: 2px solid var(--bio-border-color);
-    text-align: center;
+    border-right: 5px solid var(--main-color);
     background: var(--aside-color);
     padding: 0 10px;
     overflow: hidden;
+}
+.conteudo{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+.conteudo.img{
+    text-align: center;
 }
 
 .section-container{
@@ -56,6 +66,15 @@
     background: #dad5c3;
     overflow-y: scroll;
 }
+.section-container-portfolio{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    position: absolute;
+    background: #dad5c3;
+    overflow-y: scroll;
+}
 #about-container-section{
     padding-top: 150px;
 }
@@ -70,11 +89,12 @@
 }
 
 #aside-container img{
+    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 50px auto;
-    padding: 3px 0;
+    padding: 3px 0px;
     border: 5px solid var(--main-color);
     box-shadow: 5px 5px, 20px var(--text-color);
     cursor: pointer;
@@ -83,9 +103,10 @@
     filter: grayscale(100%);
 }
 #aside-container img:hover{
-   filter: grayscale(0%);
-   transform: scale(1.05);
-   box-shadow: 5px 5px 20px black;
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    box-shadow: 5px 5px 20px black;
+    cursor: pointer;
 }
 .aside-welcome{
     border-bottom: 1px solid var(--text-color);
@@ -93,23 +114,41 @@
 }
 
 .div-menu{
-    justify-content: center;
+    left: 0;
+    width: 170px;
+    height: 100%;
 }
-.div-menu .ul-menu li{
-    margin: 8px 0;
+.div-menu .ul-menu a{
+    display: block;
+    text-decoration: none;
+    width: 170px;
+    height: 100%;
+    line-height: 50px;
     font-size: 15px;
     text-transform: uppercase;
-    list-style: none;
+    box-sizing: border-box;
+    color: var(--text-color);
+    padding-left: 20px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    transition: .4s;
+    
+}
+.div-menu .ul-menu a i{
+    padding-right: 5px;
 }
 
-.div-menu .ul-menu a{
-    width: 100%;
-    color: var(--text-color);
-    text-decoration: none;
+.ul-menu li:hover a{
+    font-size: 18px;
+    padding-left: 30px;
     
 }
 div.div-menu ul.ul-menu li.primeiro a{
     background: none;
+}
+.navbar-collapse{
+    align-items: none;
 }
 #ual-link{
     font-size: 15px;
@@ -122,12 +161,14 @@ body.homebody ul.ul-menu a#idhome,
 body.mycvbody ul.ul-menu a#mycv,
 body.skillsbody ul.ul-menu a#skills,
 body.aboutbody ul.ul-menu a#about{
-    color: var(--main-color);
+    color: var(--aside-color);
     cursor: pointer;
-    box-shadow: 5px 5px 10px black;
+    background: var(--text-color);
+    font-size: 18px;
+    padding-left: 30px;
 }
 
-.ul-menu a::after{
+/*.ul-menu a::after{
     content: "";
     display: block;
     width: 0;
@@ -140,33 +181,44 @@ body.aboutbody ul.ul-menu a#about{
     width: 100%;
     height: 15px;
     color: var(--main-color);
+    transform: scale(1.05);
 }
 .ul-menu a:hover::after{
     width: 100%;
     background-position: right bottom;
     transition: width .3s;
-}
-.div-social p{
-    margin-top: 50px;
-}
+}*/
 
+
+.div-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*position: absolute;*/
+    width: 95%;
+
+}
+.div-social ul{
+    box-sizing: border-box;
+    
+}
 
 .div-social a i{
-    margin: 10px 10px;
-    justify-content: center;
-    font-size: 30px;
+    text-align: center;
     color: var(--text-color);
+    font-size: 32px;
+    margin: 0px 20px;
     text-decoration: none;
 }
 
-.div-social a{
-    margin: 0 10px;
-    text-decoration: none;
+.p-contato p{
+    text-align: center;
+    padding: 60px 30px 0px 0px ;
+   
 }
-.div-social a i:hover{
-    box-shadow: 5px 5px 10px black;
-    transition: .2s;
-}
+
+
 
 
 
@@ -234,10 +286,129 @@ body.aboutbody ul.ul-menu a#about{
     margin-right: 10px;
 }
 
+
+/*Portfolio Css*/
+.main h1{
+    text-align: center;
+    margin: 40px 0 50px 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  /*Styles for product card*/
+  
+  .capa .capa-card{
+    z-index: 1;
+    background: #1D212B;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    
+  }
+  
+  .capa .capa-card .capa-img{
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  
+  .capa .capa-card .popup-btn{
+    z-index: 1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /*Styles for popup view*/
+  
+  .capa .popup-view{
+    z-index: 2;
+    background: gray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  
+  .capa .popup-view.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  .capa .popup-card{
+    z-index: 2;
+    display: block;
+    position: relative;
+    width: 900px;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    
+    
+  }
+  
+  .capa .popup-card .popup-carousel{
+    z-index: 2;
+    justify-content: center;
+    width: 900px;
+    height: 490px;
+    border-bottom: 3px solid var(--aside-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+  }
+
+  .capa .popup-card .popup-carousel .carousel-item{
+    height: 498px;
+    width: 100%;
+}
+
+.capa .popup-card .popup-carousel .carousel-item .img-fluid{
+    height: 500px;
+    width: 100%;
+}
+
+  .capa .popup-card .close-btn{
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  .capa .detalhes{
+      margin: 10px
+  }
+
+  .capa .detalhes .popup-title{
+    font-size: 15px;
+    font-weight: 15px;
+  }
+
+  .capa .detalhes .tecnology{
+      display: block;
+  }
+
 /*Mobile*/
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 575.98px) { 
+
+    
+
     #aside-container img{
         width: 200px;
         height: 200px;
@@ -251,7 +422,7 @@ body.aboutbody ul.ul-menu a#about{
         user-select: none;
         filter: grayscale(100%);
     }
-    
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -265,6 +436,8 @@ body.aboutbody ul.ul-menu a#about{
         right: auto;
         position: relative;
         width: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--main-color);
     
     }
     .section-container,
@@ -281,28 +454,32 @@ body.aboutbody ul.ul-menu a#about{
         overflow: hidden;
         
     }
-   /* div.section-container h4,
-    div.section-container-cv h4{
-        font-size: 20px;
-    }*/
-    /*div.section-container div.pefil div.perfil-title i.fa, i.fas,
-    div.section-container-cv div.pefil div.perfil-title i.fa, i.fas{
-        font-weight: 400;
-    }*/
     
+
     #aside-container img{
         margin: 30px auto;
     }
     
-
     .div-social a i{
-        margin: 6px 5px;
+        margin: 0px 15px;
         font-size: 20px;
         
     }
     
 
     /*My cv*/
+    .section-container-portfolio{
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        position: relative;
+        width: auto;
+        font-size: 12px;
+        padding: 30px 20px;
+        align-items: center;
+        overflow: hidden;
+    }
 
     .perfil-title i{
         font-size: 25px;
@@ -322,9 +499,24 @@ body.aboutbody ul.ul-menu a#about{
     .skills-box i{
         font-size: 60px;
     }
-    
-    
 
+    
+    /*Portfolio*/
+    
+    .capa .popup-view{
+        width: 100%;
+        
+      }
+
+      .capa .popup-card{
+        width: 100%;
+        top: 0;
+        margin: 0px 0px;
+        
+      }
+
+      
+    
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -334,11 +526,10 @@ body.aboutbody ul.ul-menu a#about{
     }
     div#aside-container nav button i.fa, i.fas{
         font-size: 18px;
+        text-align: center;
 
     }
-    #aside-container img{
-    cursor: cell;
-    }
+    
     #ual-link{
         font-size: 15px;
         color: var(--main-color);
@@ -359,24 +550,85 @@ body.aboutbody ul.ul-menu a#about{
         padding-bottom: 0px;
     }
     .div-social a i{
-        margin: 5px 5px;
-        font-size: 22px;
+        margin: 0px 15px;
+        font-size: 28px;
     }
     .div-social p{
         margin-top: 25px;
     }
-    .div-social a{
-        margin: 0 8px;
-    }
+    .capa .popup-card{
+        z-index: 2;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0px 0px;
+        
+      }
+      .capa .popup-card .popup-carousel{
+        z-index: 2;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid var(--aside-color);
+      }
+    
+      
+   
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (max-width: 1500px) { 
     
     .section-container,
-    .section-container-cv{
+    .section-container-cv,
+    .section-container-portfolio{
         padding: 20px 20px;
         text-align: justify;
+    }
+    .capa .popup-card{
+        z-index: 2;
+        display: block;
+        position: relative;
+        width: auto;
+        height: auto;
+        background: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 10px 10px;
+        
+      }
+      .capa .popup-card .popup-carousel{
+        z-index: 2;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid var(--aside-color);
+      }
+    
+      .capa .popup-card .popup-carousel .carousel-item{
+          height: 498px;
+          width: 100%;
+      }
+    
+      .capa .popup-card .popup-carousel .carousel-item .img-fluid{
+          height: 500px;
+          width: 100%;
+      }
+      .capa .detalhes{
+        margin: 10px
+    }
+  
+    .capa .detalhes .popup-title{
+      font-size: 15px;
+      font-weight: 15px;
+    }
+  
+    .capa .detalhes .tecnology{
+        display: block;
     }
     
 }
