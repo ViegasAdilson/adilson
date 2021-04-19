@@ -131,9 +131,8 @@
     box-sizing: border-box;
     color: var(--text-color);
     padding-left: 20px;
-    border: 1px solid rgba(255, 255, 255, .1);
-    border-bottom: 1px solid black;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     transition: .4s;
     
 }
@@ -163,11 +162,11 @@ body.homebody ul.ul-menu a#idhome,
 body.mycvbody ul.ul-menu a#mycv,
 body.skillsbody ul.ul-menu a#skills,
 body.aboutbody ul.ul-menu a#about{
-    color: var(--aside-color);
     cursor: pointer;
-    background: var(--text-color);
     font-size: 18px;
     padding-left: 30px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-left: 3px solid var(--main-color);
 }
 
 /*.ul-menu a::after{
