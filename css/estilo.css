@@ -143,6 +143,7 @@
 .ul-menu li:hover a{
     font-size: 18px;
     padding-left: 30px;
+    border: 1px solid rgba(255, 255, 255, .1);
     
 }
 div.div-menu ul.ul-menu li.primeiro a{
@@ -165,7 +166,7 @@ body.aboutbody ul.ul-menu a#about{
     cursor: pointer;
     font-size: 18px;
     padding-left: 30px;
-    border: 1px solid rgba(255, 255, 255, .1);
+    
     border-left: 3px solid var(--main-color);
 }
 
