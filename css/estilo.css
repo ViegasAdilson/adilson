@@ -424,6 +424,9 @@ body.aboutbody ul.ul-menu a#about{
         border-bottom: 5px solid var(--main-color);
     
     }
+    #about-container-section{
+        padding-top: 5px;
+    }
     .section-container,
     .section-container-cv{
         top: auto;
@@ -538,9 +541,7 @@ body.aboutbody ul.ul-menu a#about{
         color: var(--main-color);
         text-transform: uppercase;
     }
-    #about-container-section{
-        padding-top: 5px;
-    }
+    
     .perfil{
         margin-top: 10px;
         text-align: justify;
