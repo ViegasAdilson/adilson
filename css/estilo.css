@@ -225,9 +225,6 @@ body.aboutbody ul.ul-menu a#about{
 }
 
 
-
-
-
 /*Cv*/
 #cv-cabecalho{
     text-align: right;
@@ -307,20 +304,22 @@ body.aboutbody ul.ul-menu a#about{
   }
   
   /*Styles for product card*/
-  .capa{
+  .capa {
     padding: 5px;
-    transition: .5s ease-in-out;
   }
-   .capa-card:hover{
-      transform: scale(1.15);
-      z-index: 1;
+
+  .capa-card img{
+      transition: all 300ms ease-in-out;
+  }
+   .capa-card img:hover{
+     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
   }
   
   .capa .capa-card{
-    background: #1D212B;
     width: 250px;
     height: 250px;
     border-radius: 15px;
+    overflow: hidden;
     z-index: 1;
   }
   
@@ -352,7 +351,7 @@ body.aboutbody ul.ul-menu a#about{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 70%;
+    height: 75%;
     background-color: white;
     padding: .5rem;
     border-radius: 5px;
@@ -398,6 +397,8 @@ body.aboutbody ul.ul-menu a#about{
   .popup-card .detalhes{
      z-index: 2;
      margin-top: 10px;
+     display: inline;
+
   }
 
   .popup-card .detalhes .popup-title{
@@ -405,10 +406,7 @@ body.aboutbody ul.ul-menu a#about{
     font-weight: 15px;
   }
 
-  .popup-card .detalhes .tecnology{
-      display: block;
-  }
-  .view-btn{
+.detalhes .view-btn{
       font-weight: 20em;
       padding: 10px;
       display: i;
@@ -416,7 +414,6 @@ body.aboutbody ul.ul-menu a#about{
       text-decoration: none;
       background: var(--aside-color);
       border-radius: 50px;
-      margin-left: 85%;
   }
 
   .view-btn:hover{
@@ -514,13 +511,11 @@ body.aboutbody ul.ul-menu a#about{
     
     .capa .popup-view{
         width: 100%;
-        
       }
 
       .capa .popup-card{
         width: 100%;
-        top: 0;
-        margin: 0px 0px;
+        margin: 0;
         
       }
 
@@ -627,7 +622,6 @@ body.aboutbody ul.ul-menu a#about{
         background: white;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        margin: 10px 10px;
         
       }
       .capa .popup-card .popup-carousel{
