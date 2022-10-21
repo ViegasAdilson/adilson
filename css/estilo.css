@@ -162,7 +162,7 @@ div.div-menu ul.ul-menu li.primeiro a{
 body.homebody ul.ul-menu a#idhome,
 body.mycvbody ul.ul-menu a#mycv,
 body.skillsbody ul.ul-menu a#skills,
-body.aboutbody ul.ul-menu a#about{
+body.portfolio ul.ul-menu a#about{
     cursor: pointer;
     font-size: 18px;
     padding-left: 30px;
@@ -377,7 +377,7 @@ body.aboutbody ul.ul-menu a#about{
     z-index: 2;
     justify-content: center;
     width: 100%;
-    height: 498px;
+    height: 75%;
     border-bottom: 3px solid var(--aside-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -385,13 +385,13 @@ body.aboutbody ul.ul-menu a#about{
   }
 
   .cpap .popup-card .popup-carousel .carousel-item{
-    height: 498px;
+    display: flex;
+    display: contents;
     width: 100%;
+    position: relative;
 }
-
-.capa .popup-card .popup-carousel .carousel-item .img-fluid{
-    height: 500px;
-    width: 100%;
+img.img-fluid{
+    min-height: 500px;
 }
 
   .popup-card .detalhes{
@@ -422,10 +422,27 @@ body.aboutbody ul.ul-menu a#about{
       text-decoration: none;
       
   }
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+
+}
 
 /*Mobile*/
 
-/*Small devices (landscape phones, 576px and up)*/
+/*Small devices (landscape phones, 576px and up)*/footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+
+}
 
 
 /*Medium devices (tablets, 768px and up)*/
@@ -518,8 +535,6 @@ body.aboutbody ul.ul-menu a#about{
         margin: 0;
         
       }
-
-      
     
 }
 
