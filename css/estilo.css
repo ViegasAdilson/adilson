@@ -434,7 +434,8 @@ img.img-fluid{
 
 /*Mobile*/
 
-/*Small devices (landscape phones, 576px and up)*/footer{
+/*Small devices (landscape phones, 576px and up)*/
+footer{
     position: fixed;
     bottom: 0;
     left: 0;
