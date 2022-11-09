@@ -38,11 +38,11 @@
 
 
 
-.section-container{
+.section-skills, .section-about{
     top: 0;
     right: 0;
     bottom: 0;
-    width: 70%;
+    width: 100%;
     min-height: 100vh;
     position: absolute;
     text-align: justify;
@@ -57,12 +57,12 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: 70%;
+    width: 100%;
     position: absolute;
     text-align: justify;
     padding-left: 40px;
     padding-top: 70px;
-    padding-right: 200px;
+    padding-right: 40px;
     color: var(--aside-color);
     background: #dad5c3;
     overflow-y: scroll;
@@ -159,16 +159,13 @@ div.div-menu ul.ul-menu li.primeiro a{
     
 }
 
-body.homebody ul.ul-menu a#idhome,
-body.mycvbody ul.ul-menu a#mycv,
-body.skillsbody ul.ul-menu a#skills,
-body.portfolio ul.ul-menu a#about{
-    cursor: pointer;
+.active {
     font-size: 18px;
-    padding-left: 30px;
-    
-    border-left: 3px solid var(--main-color);
+    background-color: #54b689;
+    border-radius: 20px;
+    text-align: center;
 }
+
 
 /*.ul-menu a::after{
     content: "";
@@ -398,6 +395,7 @@ img.img-fluid{
      z-index: 2;
      margin-top: 10px;
      display: inline;
+     text-align: justify;
 
   }
 
@@ -662,4 +660,3 @@ img.img-fluid{
     }
     
 }
- 
