@@ -63,6 +63,7 @@
     padding-left: 40px;
     padding-top: 70px;
     padding-right: 40px;
+    margin-bottom: 50px;
     color: var(--aside-color);
     background: #dad5c3;
     overflow-y: scroll;
@@ -123,7 +124,7 @@
 .div-menu .ul-menu a{
     display: block;
     text-decoration: none;
-    width: 170px;
+    width: 145px;
     height: 100%;
     line-height: 50px;
     font-size: 15px;
