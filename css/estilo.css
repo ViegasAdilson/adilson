@@ -190,7 +190,7 @@ div.div-menu ul.ul-menu li.primeiro a{
 }*/
 
 
-.div-social{
+.social-icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,12 +199,8 @@ div.div-menu ul.ul-menu li.primeiro a{
     width: 95%;
 
 }
-.div-social ul{
-    box-sizing: border-box;
-    
-}
 
-.div-social a i{
+.social-icon a i{
     text-align: center;
     color: var(--text-color);
     font-size: 32px;
@@ -212,7 +208,7 @@ div.div-menu ul.ul-menu li.primeiro a{
     text-decoration: none;
     transition: transform .5s ease-in-out;
 }
-.div-social a:hover{
+.social-icon a:hover{
     transform: scale(1.5);
 }
 
@@ -298,129 +294,49 @@ div.div-menu ul.ul-menu li.primeiro a{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
+    gap: 20px;
   }
   
   /*Styles for product card*/
   .capa {
-    padding: 5px;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all .5s ease;
+  }
+  .capa:hover{
+    transform: rotateY(180deg);
   }
 
-  .capa-card img{
-      transition: all 300ms ease-in-out;
-  }
-   .capa-card img:hover{
-     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
-  }
-  
-  .capa .capa-card{
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .capa .capa-card .capa-img{
-    z-index: 1;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-  }
-  
-  /*Styles for popup view*/
-  
-  .capa .popup-view{
-    z-index: 3;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
+  .front{
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
     height: 100%;
-    width: 100%;
-    visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
   }
+  .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    background-color: var(--aside-color);
+    color: #243346;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+
+  .capa img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
   
- 
-  .capa .popup-card{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 75%;
-    background-color: white;
-    padding: .5rem;
-    border-radius: 5px;
-    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-    z-index: 4;
-  }
-  .capa .popup-card .close-btn{
-    color: rgb(3, 3, 3);
-    z-index: 5;
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 20px;
-    margin: 20px;
-    cursor: pointer;
-  }
-  .capa .popup-view.active{
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .capa .popup-card .popup-carousel{
-    z-index: 2;
-    justify-content: center;
-    width: 100%;
-    height: 75%;
-    border-bottom: 3px solid var(--aside-color);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    
-  }
-
-  .cpap .popup-card .popup-carousel .carousel-item{
-    display: flex;
-    display: contents;
-    width: 100%;
-    position: relative;
-}
-img.img-fluid{
-    min-height: 500px;
-}
-
-  .popup-card .detalhes{
-     z-index: 2;
-     margin-top: 10px;
-     display: inline;
-     text-align: justify;
-
-  }
-
-  .popup-card .detalhes .popup-title{
-    font-size: 15px;
-    font-weight: 15px;
-  }
-
-.detalhes .view-btn{
-      font-weight: 20em;
-      padding: 10px;
-      display: i;
-      color: var(--main-color);
-      text-decoration: none;
-      background: var(--aside-color);
-      border-radius: 50px;
-  }
-
-  .view-btn:hover{
-      background: var(--text-color);
-      color: var(--aside-color);
-      text-decoration: none;
-      
-  }
   footer{
     position: fixed;
     bottom: 0;
@@ -474,7 +390,7 @@ img.img-fluid{
         margin: 15px auto;
     }
     
-    .div-social a i{
+    .social-icon a i{
         margin: 0px 15px;
         font-size: 20px;
         
@@ -576,11 +492,11 @@ img.img-fluid{
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
-    .div-social a i{
+    .social-icon a i{
         margin: 0px 15px;
         font-size: 28px;
     }
-    .div-social p{
+    .social-icon p{
         margin-top: 25px;
     }
     .capa .popup-card{
