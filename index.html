@@ -1,183 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="img/aplv.jpg">
+    <link rel="icon" href="img/aplv.jpg" />
 
     <!-- Style css -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!--fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
 
     <!-- Devicon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+    />
 
     <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Portfilio | Profile</title>
+  </head>
 
-
-</head>
-
-<body class="homebody">
+  <body class="homebody">
     <aside id="aside-container">
-        <div class="conteudo">
-            <img src="img/aplv.jpg" alt="Adilson Viegas">
-            <p>
-                Adilson Viegas
-            </p>
-            <p>
-                My name is Adilson Viegas, and I am a <samp class="highlight">Junior Software/Web Developer</samp>
-            </p>
-            <p class="aside-welcome">Welcome</p>
+      <div class="conteudo">
+        <img src="img/aplv.jpg" alt="Adilson Viegas" />
+        <p>Adilson Pires Lima Viegas</p>
+        <p>
+          My name is Adilson Viegas, and I am a
+          <samp class="highlight">Junior Software/Web Developer</samp>
+        </p>
+        <p class="aside-welcome">Welcome</p>
+      </div>
+      <nav class="navbar-expand-md">
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navtarget"
+        >
+          <i class="fas fa-bars" style="color: #dad5c3; float: left"></i>
+        </button>
+        <div class="div-menu collapse navbar-collapse" id="navtarget">
+          <ul class="ul-menu">
+            <li class="active">
+              <a id="idhome" href="index.html" target="iframe_main"
+                ><i class="fas fa-box-open"></i>Project</a
+              >
+            </li>
+            <li>
+              <a id="skills" href="#" onclick="aquisicao('skills.html')"
+                ><i class="fas fa-user-graduate"></i>Skills</a
+              >
+            </li>
+            <li>
+              <a id="mycv" href="#" onclick="aquisicao('mycv.html')"
+                ><i class="fas fa-book-open"></i>My CV</a
+              >
+            </li>
+            <li>
+              <a id="about" href="#" onclick="aquisicao('about.html')"
+                ><i class="fas fa-solid fa-address-card"></i>About</a
+              >
+            </li>
+          </ul>
         </div>
-        <nav class="navbar-expand-md">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navtarget">
-                <i class="fas fa-bars" style="color: #dad5c3; float: left;"></i>
-            </button>
-            <div class="div-menu collapse navbar-collapse" id="navtarget">
-                <ul class="ul-menu ">
-                    <li class="active">
-                        <a id="idhome" href="index.html" target="iframe_main"><i class="fas fa-box-open"></i>Project</a>
-                    </li>
-                    <li>
-                        <a id="skills" href="#" onclick="aquisicao('skills.html')"><i
-                                class="fas fa-user-graduate"></i>Skills</a>
-                    </li>
-                    <li>
-                        <a id="mycv" href="#" onclick="aquisicao('mycv.html')"><i class="fas fa-book-open"></i>My CV</a>
-                    </li>
-                    <li>
-                        <a id="about" href="#" onclick="aquisicao('about.html')"><i
-                                class="fas fa-solid fa-address-card"></i>About</a>
-                    </li>
+        <div class="p-contato">
+          <p class="d-none d-md-block">GET IN TOUCH</p>
 
-                </ul>
-            </div>
-            <div class="p-contato">
-
-                <p class="d-none d-md-block">GET IN TOUCH</p>
-
-                <span class="social-icon">
-                    <a href="mailto:viegadilson@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/adilson-pires-lima-viegas-0629221a2/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/ViegasAdilson" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </span>
-            </div>
-        </nav>
+          <span class="social-icon">
+            <a href="mailto:viegadilson@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/adilson-pires-lima-viegas-0629221a2/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ViegasAdilson" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </span>
+        </div>
+      </nav>
     </aside>
     <section id="section" class="section-container-portfolio">
-        <div class="main">
-            <div>
-                <h1>Project</h1>
-            </div>
-            <div class="container">
-
-                <!-- Financa Flip -->
-                <div class="capa">
-                    <div class="front">
-                        <img src="./img/finans.PNG" alt="">
-                    </div>
-                    <div class="back social-icon">
-                        <a href="https://github.com/ViegasAdilson/Finance" target="blank"><i class="fab fa-github"></i></a>
-                        <a href="https://viegasadilson.github.io/Finance/" target="blank"><i class="fas fa-eye"></i></i></a>
-                    </div>
-                </div>
-
-                 <!-- MataMosquito Flip -->
-                <div class="capa">
-                    <div class="front">
-                        <img src="./img/mataMosquito.PNG" alt="">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="back social-icon">
-                        <a href="https://github.com/ViegasAdilson/killFly" target="blank"><i class="fab fa-github"></i></a>
-                        <a href="https://viegasadilson.github.io/killFly/" target="blank"><i class="fas fa-eye"></i></i></a>
-                    </div>
-                </div>
-
-                 <!-- Tec-Blog Flip -->
-                <div class="capa">
-                    <div class="front">
-                        <img src="./img/tec-blog.PNG" alt="">
-                    </div>
-                    <div class="back social-icon">
-                        <a href="https://github.com/ViegasAdilson/TecBlog" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://viegasadilson.github.io/TecBlog/" target="_blank"><i class="fas fa-eye"></i></i></a>
-                    </div>
-                </div>
-
-                 <!-- Paralax Flip -->
-                <div class="capa">
-                    <div class="front">
-                        <img src="./img/paralax.png" alt="">
-                    </div>
-                    <div class="back social-icon">
-                        <a href="https://github.com/ViegasAdilson/Paralax" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://viegasadilson.github.io/Paralax/" target="_blank"><i class="fas fa-eye"></i></i></a>
-                    </div>
-                </div>
-
-                 <!-- Spotify Flip -->
-                 <div class="capa">
-                    <div class="front">
-                        <img src="./img/spotify.png" alt="">
-                    </div>
-                    <div class="back social-icon">
-                        <a href="https://github.com/ViegasAdilson/Spotify" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://viegasadilson.github.io/Spotify/" target="_blank"><i class="fas fa-eye"></i></i></a>
-                    </div>
-                </div>
-
-                <!-- Guess Number Flip -->
-                <div class="capa">
-                    <div class="front">
-                        <img src="./img/guessNumber.png" alt="">
-                    </div>
-                    <div class="back social-icon">
-                        <a href="https://github.com/ViegasAdilson/GuessNumber" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://viegasadilson.github.io/GuessNumber/" target="_blank"><i class="fas fa-eye"></i></i></a>
-                    </div>
-                </div>
-
-            </div>
+      <div class="main">
+        <div>
+          <h1>Project</h1>
         </div>
+        <div class="container">
+          <!-- Financa Flip -->
+          <div class="capa">
+            <div class="front">
+              <img src="./img/finans.PNG" alt="" />
+            </div>
+            <div class="back social-icon">
+              <a href="https://github.com/ViegasAdilson/Finance" target="blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://viegasadilson.github.io/Finance/" target="blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- MataMosquito Flip -->
+          <div class="capa">
+            <div class="front">
+              <img src="./img/mataMosquito.PNG" alt="" />
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="back social-icon">
+              <a href="https://github.com/ViegasAdilson/killFly" target="blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://viegasadilson.github.io/killFly/" target="blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Tec-Blog Flip -->
+          <div class="capa">
+            <div class="front">
+              <img src="./img/tec-blog.PNG" alt="" />
+            </div>
+            <div class="back social-icon">
+              <a href="https://github.com/ViegasAdilson/TecBlog" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://viegasadilson.github.io/TecBlog/" target="_blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Paralax Flip -->
+          <div class="capa">
+            <div class="front">
+              <img src="./img/paralax.png" alt="" />
+            </div>
+            <div class="back social-icon">
+              <a href="https://github.com/ViegasAdilson/Paralax" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://viegasadilson.github.io/Paralax/" target="_blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Spotify Flip -->
+          <div class="capa">
+            <div class="front">
+              <img src="./img/spotify.png" alt="" />
+            </div>
+            <div class="back social-icon">
+              <a href="https://github.com/ViegasAdilson/Spotify" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://viegasadilson.github.io/Spotify/" target="_blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Guess Number Flip -->
+          <div class="capa">
+            <div class="front">
+              <img src="./img/guessNumber.png" alt="" />
+            </div>
+            <div class="back social-icon">
+              <a
+                href="https://github.com/ViegasAdilson/GuessNumber"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://viegasadilson.github.io/GuessNumber/"
+                target="_blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="pt-1 pb-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p><span> &copy </span>Copyright 2023, by: Adilson Viegas</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p><span> &copy </span>Copyright 2023, by: Adilson Viegas</p>
+          </div>
         </div>
+      </div>
     </footer>
 
-
     <script src="js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -102,7 +102,7 @@
     cursor: pointer;
     transition: .5s ease-in-out;
     user-select: none;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
 #aside-container img:hover{
     transform: scale(1.05);
@@ -371,13 +371,14 @@ div.div-menu ul.ul-menu li.primeiro a{
         padding-top: 5px;
     }
     .section-container,
-    .section-container-cv{
+    .section-container-cv, .section-skills, .section-about{
         top: auto;
         bottom: auto;
         left: auto;
         right: auto;
         position: relative;
         width: auto;
+        height: auto;
         font-size: 12px;
         padding: 10px 20px;
         text-align: justify;
